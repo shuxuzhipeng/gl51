@@ -1,0 +1,47 @@
+import java.awt.Image;
+
+public class Config{
+	public static final integer PHOTOWIDTH=1024;
+	public static final integer PHOTOHEIGHT=1024;
+	public static final integer THUMBAILWIDTH=50;
+	public static final integer THUMBAILWIDTH=50;
+	public static final String DRIVER_CLASS_NAME = "com.mysql.jdbc.Driver";
+	public static final String URL = "jdbc:mysql://localhost:3306/..";
+	...
+}
+
+public class Photo {
+	private Image image;
+	private int width;
+	private int height;
+	public getter, setter;
+}
+
+public class PhotoOperator {
+	public Photo ChangeSize(Photo photo) {}
+	
+	public Photo getThumbnail(Photo photo) {}
+	
+	public Photo PrintLogo(Photo photo) {}
+}
+
+public class Stock2Cloud {
+	public void StockPhoto();
+}
+
+public class Stock2DB {
+	
+	public Stock(Photo photo) {}
+}
+
+public class Publication {
+
+	private  Stock2Cloud  stock2Cloud;
+	
+	private Stock2DB stock2DB;
+	
+	private PhotoOperator photoOperator;
+	
+	public uploadPhoto(Photo photo) {}
+	
+}
